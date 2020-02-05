@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/answer1_btn"
+        android:layout_width="323dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="284dp"
+        android:background="@drawable/transparent_bg_bordered_button"
+        android:text="(answer1 here)"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="checkAnswer"/>
+
+    <Button
+        android:id="@+id/answer3_btn"
+        android:layout_width="323dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="77dp"
+        android:background="@drawable/transparent_bg_bordered_button"
+        android:text="(answer3 here)"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/answer2_btn"
+        android:onClick="checkAnswer"/>
+
+    <Button
+        android:id="@+id/answer4_btn"
+        android:layout_width="323dp"
+        android:layout_height="77dp"
+        android:background="@drawable/transparent_bg_bordered_button"
+        android:text="(answer4 here)"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answer3_btn"
+        android:onClick="checkAnswer"/>
+
+    <TextView
+        android:id="@+id/questionView"
+        android:layout_width="356dp"
+        android:layout_height="93dp"
+        android:text="(Question goes here)"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/answer1_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.698" />
+
+    <Button
+        android:id="@+id/answer2_btn"
+        android:layout_width="323dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/transparent_bg_bordered_button"
+        android:text="(answer2 here)"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answer1_btn"
+        android:onClick="checkAnswer"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/setting_btn"
+        android:layout_width="61dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="61dp"
+        android:background="#00FFFFFF"
+        android:backgroundTint="#00FFFFFF"
+        android:clickable="true"
+        android:foregroundTint="#00FFFFFF"
+        app:backgroundTint="#00FFFFFF"
+        app:elevation="6dp"
+        app:hoveredFocusedTranslationZ="6dp"
+        app:layout_constraintBottom_toTopOf="@+id/questionView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.951"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:maxImageSize="60dp"
+        app:rippleColor="#00FFFFFF"
+        app:srcCompat="@android:drawable/ic_menu_manage" />
+
+    <TextView
+        android:id="@+id/indexView"
+        android:layout_width="206dp"
+        android:layout_height="72dp"
+        android:text="(answered / total)"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/questionView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.168"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.31" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
